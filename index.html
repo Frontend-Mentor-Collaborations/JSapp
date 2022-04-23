@@ -5,10 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <script src="app.js"></script>
-    <title>ToDoList</title>
+    <script defer src="app.js"></script>
+    <title>To Do List</title>
   </head>
   <body>
-    <h1 class="title">To Do List</h1>
+    <main>
+      <figure class="content">
+        <h1 class="title">To Do List</h1>
+        <input id="userInput" type="text" placeholder="things to do" />
+        <button id="addInput">+</button>
+        <div class="userInputContent" id="contentContainer"></div>
+      </figure>
+    </main>
   </body>
 </html>

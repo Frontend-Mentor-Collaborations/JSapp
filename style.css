@@ -1,0 +1,25 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.content {
+  margin: 5rem auto;
+  text-align: center;
+  display: block;
+}
+
+.userInputContent {
+  background-color: bisque;
+  height: 100vh;
+  margin-top: 1.8rem;
+}
+
+h1 {
+  margin-bottom: 2rem;
+}
+
+button {
+  width: 3.2rem;
+}
