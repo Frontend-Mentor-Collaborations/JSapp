@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background: linear-gradient(to right, #78ffd6, #007991);
+}
+
 .content {
   margin: 5rem auto;
   text-align: center;
@@ -11,15 +15,60 @@
 }
 
 .userInputContent {
-  background-color: bisque;
-  height: 100vh;
+  background-color: inherit;
   margin-top: 1.8rem;
+}
+
+.contentStyling {
+  font-weight: bold;
+  font-size: 1.6rem;
+  padding: 0.2rem 0 0.2rem 0;
+  display: block;
+  cursor: pointer;
 }
 
 h1 {
   margin-bottom: 2rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 3.5rem;
+  font-weight: bold;
 }
 
-button {
-  width: 3.2rem;
+#userInput {
+  width: 20rem;
+  height: 2rem;
+  border-radius: 0.4rem;
+}
+
+#userInput::placeholder {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  padding-left: 0.8rem;
+}
+
+#addInput {
+  width: 2rem;
+  height: 1.9rem;
+  margin-left: -2.4rem;
+  border-radius: 0.1rem;
+}
+
+svg {
+  width: 1.6rem;
+}
+
+.contentDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+p {
+  display: inline;
+  font-family: "Poppins", sans-serif;
+}
+
+.binDelete {
+  width: 3rem;
+  margin-left: 2rem;
 }
