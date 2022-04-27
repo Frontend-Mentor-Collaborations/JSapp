@@ -19,12 +19,13 @@ body {
   margin-top: 1.8rem;
 }
 
-.contentStyling {
+.contentSpan {
   font-weight: bold;
   font-size: 1.6rem;
   padding: 0.2rem 0 0.2rem 0;
-  display: block;
   cursor: pointer;
+  display: inline;
+  font-family: "Poppins", sans-serif;
 }
 
 h1 {
@@ -32,43 +33,73 @@ h1 {
   font-family: "Montserrat", sans-serif;
   font-size: 3.5rem;
   font-weight: bold;
+  text-shadow: 10px 8px 12px #6f00ffb4;
 }
 
 #userInput {
   width: 20rem;
   height: 2rem;
   border-radius: 0.4rem;
+  padding-left: 1rem;
+  font-size: 1.2rem;
 }
 
 #userInput::placeholder {
   font-family: "Poppins", sans-serif;
   font-size: 1.1rem;
   padding-left: 0.8rem;
+  margin: 0 auto;
 }
 
 #addInput {
-  width: 2rem;
+  width: 4rem;
   height: 1.9rem;
   margin-left: -2.4rem;
-  border-radius: 0.1rem;
+  border-radius: 0.5rem;
 }
 
-svg {
-  width: 1.6rem;
+#addInput:hover {
+  background: linear-gradient(to right, #fc00ff, #00dbde);
 }
 
 .contentDiv {
   display: flex;
   align-items: center;
-  justify-content: center;
-}
-
-p {
-  display: inline;
-  font-family: "Poppins", sans-serif;
+  justify-content: space-between;
+  background-color: inherit;
+  max-width: 30rem;
+  margin: 0 auto;
+  padding: 0.2rem 0 0.2rem 0;
 }
 
 .binDelete {
-  width: 3rem;
-  margin-left: 2rem;
+  width: 2.6rem;
+  height: 2.8rem;
+  background-color: #6f00ffb4;
+}
+
+.reset {
+  width: 8rem;
+  height: 2rem;
+  margin-left: 0.5rem;
+  border-radius: 0.4rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.reset:hover {
+  background: linear-gradient(to right, #fc00ff, #00dbde);
+  color: white;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+.fa-trash-can {
+  pointer-events: none;
+  font-size: 1.8rem;
+  text-align: center;
+  margin: 0 auto;
+  color: #dddddd;
 }
